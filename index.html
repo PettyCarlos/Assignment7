@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Assignment 7</title>
+<meta charset="utf-8">
+<meta name="description" content="working with forms from float CSS to grid">
+<style>
+* {
+  box-sizing:border-box;
+    }
+
+form {
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid black;
+  margin-top: 2rem;
+  max-width: 415px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  
+}
+form input {
+  margin-bottom: 1rem;
+  background: white;
+  border: 1px solid #9c9c9c;
+}
+label {
+  text-align: right;
+  display: block;
+  padding: 0.5em 1.5em 0.5em 0;
+}
+
+.myinput {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 0.5em;
+}
+input:focus {
+  background-color: gold;
+}
+form div { text-align:center; }
+input[type="submit"], input[type="reset"] {
+  background: lightgray;
+  padding: 0.7em;
+  border: 0.5em;
+    }
+    
+  select{ width: 385px;
+    height: 22px;}
+    
+    optgroup{background-color: gold}
+    
+
+    h1 { text-align: center; font-style: italic; color: gold; }
+    
+   </style>
+
+    
+    
+    </head>
+
+    
+    
+    <body>
+<h1>Assignment 7 - working with forms</h1>
+<form class="form1" action="#" method="post">
+    
+       <label  for="fname" >First Name</label>
+    <input type="text"  required name="First Name" id="fname" size="50" maxlength="25">
+      <label  for="lname">Last Name</label>
+    <input type="text"  required name="Lastname" id="lname" size="50" maxlength="25">
+      <label for="age">Age</label>
+    <input type="text" required name="Age" id="age" size="50" maxlength="25">
+      <label for="email">Email</label>
+    <input type="text"  required name="email" id="email" size="50" maxlength="25">
+      <label for="DateOfYourMembership">Date of your Membership</label>
+    <input type="text" placeholder= "mm/dd/yyyy" required name="Date of your Membership" id="DateOfYourMembership" size="50" maxlength="25">
+      
+   
+    
+        
+        <label class="Choose your Reward">Choose your reward</label>
+
+  <select class="standard-select">
+      <optgroup label= "Choices for 'Choose your Reward' Field">
+  <option>Two-year Member Magazine subscription</option>
+    <option>2 Tickets to Annual Seminar</option>
+    <option>Voucher $100 during seminar</option>
+    <option>1-day hotel stay for Seminar</option>
+  </select>
+     
+      
+  <span class="focus"></span>
+
+
+        
+ 
+      
+      <div><input type="submit" value="Submit"> &nbsp; <input type="reset" value="Clear"></div>
+        </form>
+    
+ 
+   
+  
+</body>
+</html>
